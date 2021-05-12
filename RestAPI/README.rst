@@ -55,9 +55,15 @@ Let's give you an exemple in Python :
 
 .. code-block:: python
 
-    response = requests.put("http://localhost:5000/<your_project_name>/<id>, {json dictionnary})
-    
-#. To get data :
+    response = requests.put("http://localhost:5000/<your_project_name>/, {json dictionnary})
+
+#. To get all datas :
+
+.. code-block:: python
+
+    response = requests.get("http://localhost:5000/<your_project_name>/)
+
+#. To get one data :
 
 .. code-block:: python
 
