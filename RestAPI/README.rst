@@ -80,5 +80,7 @@ Let's give you an example in Python :
 .. code-block:: python
 
     response = requests.delete("http://localhost:5000/<your_project_name>/<id>)
-    
+
+Note that this is a basic API for now! There is still a lot of improvements to do as authentication, errors handling, etc... this will came up in the next version!
+
 Have fun!
