@@ -47,9 +47,9 @@ Once this is done, you can set the blueprint of the objects that you will store 
     
 By default, the parser reads command-line arguments in as simple strings. However, quite often the command-line string should instead be interpreted as another type, such as a float or int. The type keyword for add_argument() allows any necessary type-checking and type conversions to be performed. For more informations, check `argparse <https://docs.python.org/3/library/argparse.html#type>`_ documentation.
 
-At this point you should have your API microservice configurated. Now you can play with it as show in the ``test.py`` python exemple. This API allows you to make CRUD operations (create, read, update, delete) and store your datas in a TinyDB document oriented database. To learn more about this cutie check `argparse <https://tinydb.readthedocs.io/en/latest/>`_ documentation.
+At this point you should have your API microservice configurated. Now you can play with it as show in the ``test.py`` python example. This API allows you to make CRUD operations (create, read, update, delete) and store your datas in a TinyDB document oriented database. To learn more about this cutie check `argparse <https://tinydb.readthedocs.io/en/latest/>`_ documentation.
 
-Let's give you an exemple in Python :
+Let's give you an example in Python :
 
 #. To insert data :
 
