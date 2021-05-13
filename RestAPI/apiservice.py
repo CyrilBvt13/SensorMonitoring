@@ -12,9 +12,9 @@ query = Query()
 
 pigarden_args = reqparse.RequestParser()
 pigarden_args.add_argument("timestamp", type=str, help="Timestamp is missing", required=True)
-pigarden_args.add_argument("temperature", type=int, help="Temperature is missing", required=True)
-pigarden_args.add_argument("pressure", type=int, help="Pressure is missing", required=True)
-pigarden_args.add_argument("humidity", type=int, help="Humidity is missing", required=True)
+pigarden_args.add_argument("temperature", type=float, help="Temperature is missing", required=True)
+pigarden_args.add_argument("pressure", type=float, help="Pressure is missing", required=True)
+pigarden_args.add_argument("humidity", type=float, help="Humidity is missing", required=True)
 
 class Items(Resource):
     def get(self):
