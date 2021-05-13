@@ -51,31 +51,31 @@ At this point you should have your API microservice configurated. Now you can pl
 
 Let's give you an example in Python :
 
-#. To insert data :
+* To insert data :
 
 .. code-block:: python
 
     response = requests.put("http://localhost:5000/<your_project_name>/, {json dictionnary})
 
-#. To get all datas :
+* To get all datas :
 
 .. code-block:: python
 
     response = requests.get("http://localhost:5000/<your_project_name>/)
 
-#. To get one data :
+* To get one data :
 
 .. code-block:: python
 
     response = requests.get("http://localhost:5000/<your_project_name>/<id>)
 
-#. To update data :
+* To update data :
 
 .. code-block:: python
 
     response = requests.patch("http://localhost:5000/<your_project_name>/<id>, {json dictionnary})
 
-#. To delete data :
+* To delete data :
 
 .. code-block:: python
 
