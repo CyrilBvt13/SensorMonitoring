@@ -85,5 +85,38 @@ Python API : RestAPI/apiservice.py
 
 Please refer to the README.rst file in the RestAPI/ directory.
 
+Start the scripts at boot
+-----------
+
+In ordrer to start the main script and the API when the Raspberry Pi boots, we are going to use Supervisor control system process. Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems. To learn more about it check `Supervisor <http://supervisord.org/installing.html>`_ documentation. In the example bellow, we are going to configure the autostart of the API apiservice.py script.
+
+Install the package by running :
+
+``pip install supervisor``
+
+In the RestAPI directory, create the configuration file :
+
+``echo_supervisord_conf > supervisord.conf``
+
+Edit it with the command ``nano supervisord.conf``, add at the end of the file :
+
+.. code-block:: python
+
+      [program:flask_app]
+      command = python apiservice.py &
+      directory = <path_to_the_script>/
+      autostart = true
+      autorestart = true
+
+Start the Supervisor service by typing ``supervisord``.
+
+Then update it and check if the script has started as expected :
+
+``supervisorctl update``
+
+``supervisorctl status``
+
+Repeat this process for starting the main.py script at the boot up of the Raspberry Pi and this will be done for the server part of this project!
+
 Android/iOS app
 -----------
