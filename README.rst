@@ -120,3 +120,5 @@ Repeat this process for starting the main.py script at the boot up of the Raspbe
 
 Android/iOS app
 -----------
+
+Please refer to the README.rst file in the AndroidApp/ directory.
