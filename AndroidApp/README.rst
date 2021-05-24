@@ -68,8 +68,6 @@ The second one, sonsorDatas.dart will be used to parse the JSON file the API is 
 
 As a reminder, our JSON file looks like this :
 
-``
-
 {
     "id": "9c3e06fa0182479096df1a4ccc9cc676", 
     "data": {
@@ -79,8 +77,6 @@ As a reminder, our JSON file looks like this :
         "humidity": 33.0590236331
     }
 }
-
-``
 
 So back to our sensorDatas.dart file, first we implement a serializer and a deserialiser functions converting the JSON string to a List of SensorData structure we will define and vice versa :
 
